@@ -4,7 +4,9 @@ import { Component, input, output } from '@angular/core';
   selector: 'app-primary-button',
   imports: [],
   template: `
-    <button (click)="onClickButton.emit();">
+    <button 
+    class="bg-sky-500 hover:bg-sky-700 text-white px-3 rounded-md  cursor-pointer"
+     (click)="onClickButton.emit();">
       {{label()}}
     </button>
   `,
